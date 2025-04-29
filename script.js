@@ -7,7 +7,7 @@ const titulo = document.querySelector(".app__title");
 const botoes = document.querySelectorAll(".app__card-button");
 const startPauseBt = document.querySelector("#start-pause");
 const iniciarOuPausarbt = document.querySelector("#start-pause span");
-const botãoImagem = document.querySelector(".app__card-primary-butto-icon")
+const botãoImagem = document.querySelector(".app__card-primary-butto-icon");
 const tempoNaTela = document.getElementById("timer")
 
 const musicaFocoInput = document.querySelector("#alternar-musica");
@@ -22,7 +22,7 @@ musicaFinal.loop = true;
 musica.loop = true;
 
 let intervaloId = null;
-let tempoOriginal = 2
+let tempoOriginal = 1500;
 let tempoDecorridoPorSegundo = tempoOriginal;
 
 musicaFocoInput.addEventListener('change', () => {
@@ -34,7 +34,7 @@ musicaFocoInput.addEventListener('change', () => {
 });
 
 focoBtn.addEventListener('click', () =>{
-  tempoOriginal = 2;
+  tempoOriginal = 1500;
   alterarContexto('foco');
   focoBtn.classList.add('active');
   resetarTempo();
@@ -56,7 +56,7 @@ longoBtn.addEventListener('click', () => {
 
 function alterarContexto(contexto){
 
-  mostrarTempo()
+  mostrarTempo();
 
   botoes.forEach(function (contexto){
       contexto.classList.remove('active');
@@ -98,8 +98,8 @@ const contagemRegressiva = () => {
 
     const focoAtivo = html.getAttribute('data-contexto') == 'foco'
     if(focoAtivo){
-      const evento = new CustomEvent('focoFinalizado')
-      document.dispatchEvent(evento)
+      const evento = new CustomEvent('focoFinalizado');
+      document.dispatchEvent(evento);
     }
 
     resetarTempo();
@@ -132,22 +132,22 @@ function iniciarOuPausar(){
 
 function zerar(){
   clearInterval (intervaloId);
-  botãoImagem.setAttribute("src", "/imagens/play_arrow.png")
+  botãoImagem.setAttribute("src", "/imagens/play_arrow.png");
   iniciarOuPausarbt.textContent = 'Começar';
   intervaloId = null;
 }
 
 function mostrarTempo(){
   
-    const tempo = new Date(tempoDecorridoPorSegundo * 1000)
-    const tempoFormatado = tempo.toLocaleString('pt-br', {minute: '2-digit', second: '2-digit'})
-    tempoNaTela.innerHTML = `${tempoFormatado}`
+    const tempo = new Date(tempoDecorridoPorSegundo * 1000);
+    const tempoFormatado = tempo.toLocaleString('pt-br', {minute: '2-digit', second: '2-digit'});
+    tempoNaTela.innerHTML = `${tempoFormatado}`;
 }
 
 function resetarTempo(){
   zerar();
-  tempoDecorridoPorSegundo = tempoOriginal
-  mostrarTempo()
+  tempoDecorridoPorSegundo = tempoOriginal;
+  mostrarTempo();
 }
 
-mostrarTempo()
+mostrarTempo();

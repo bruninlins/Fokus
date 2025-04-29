@@ -68,7 +68,7 @@ function criarElementoTarefa(tarefaDoTextarea) {
 
   if (tarefaDoTextarea.completa) {
     li.classList.add('app__section-task-list-item-complete');
-    botao.setAttribute('desabld', 'desable');
+    botao.setAttribute('disabled', 'disabled');
   } else{
     li.onclick = () => {
   
@@ -139,9 +139,9 @@ document.addEventListener('focoFinalizado', () => {
 
 const removerTarefas = (somenteCompletas) => {
 /*   const seletor = somenteCompletas ? ".app__section-task-list-item-complete" : ".app__section-task-list-item" */
-let seletor = "app__section-task-list-item";
+let seletor = ".app__section-task-list-item";
 if (somenteCompletas){
-  seletor = "app__section-task-list-item-complete";
+  seletor = ".app__section-task-list-item-complete";
 }
   document.querySelectorAll(seletor).forEach(elemento => {
     elemento.remove();
