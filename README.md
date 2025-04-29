@@ -87,7 +87,7 @@ cd fokus
 <br>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/15b0ed2b-7b0f-41ff-88cc-11a4627a7d5c" width="900">
+<img src="https://github.com/user-attachments/assets/1fbcaa2a-1033-41cd-9aff-e44bff0122a2" width="900">
 </div>
 
 
@@ -95,8 +95,18 @@ cd fokus
 <br>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/ff5ed040-0ecc-4769-a162-776d970853fd" height="500">
+<img src="https://github.com/user-attachments/assets/ad67fd90-c44f-4468-a32f-eaa8fb8fee0c" height="500">
 </div>
+
+<br>
+
+<h2>Licença 📄</h2>
+
+<br>
+
+<p>Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.</p>
+
+<p>Você também pode acessar a plataforma por aqui: <a href="https://fokus-ten-beryl.vercel.app/">Fokus</a></p>
 
 <br>
 
