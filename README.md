@@ -82,6 +82,23 @@ cd fokus
 
 <br>
 
+<h2>Como usar 📘</h2>
+
+<h3>Após abrir o projeto no navegador:</h3>
+
+<ul>
+  <li>⏱️ Defina o tempo de foco (por padrão são 25 minutos);</li>
+  <li>▶️ Clique em "Começar" para iniciar o cronômetro;</li>
+  <li>⏸️ Você pode pausar e retomar a contagem a qualquer momento;</li>
+  <li>🔄 Ao final do tempo, o alarme tocará automaticamente;</li>
+  <li>🌙 É possível alternar entre os modos de foco, descanso curto e descanso longo;</li>
+  <li>🎵 Você pode ativar sons ambientes (como chuva, cafeteria ou floresta) para ajudar na concentração.</li>
+</ul>
+
+<p>🧠 Esse projeto utiliza JavaScript para controlar o cronômetro, manipular os modos e reproduzir os sons, promovendo foco com a técnica Pomodoro.</p>
+
+<br>
+
 <h2>Captura de Tela 🖼️</h2>
 
 <br>
